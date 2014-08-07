@@ -188,8 +188,8 @@ header ul li a:hover{ text-decoration:none;}
 .footetop h2{font-family: 'Source Sans Pro'; font-size:16px; color:#ffffff; margin:0px; padding:0px;} 
 
 
-.oficinas .textimages{ position:absolute; left:50px; top:150px; font-size:12px; font-family: 'Source Sans Pro'; font-weight: 300; color:#fff;}
-.oficinas img{border: 1px solid white; border-radius: 3px; overflow: hidden; margin-left: 20px;}
+.oficinas .textimages{ position:absolute; left:50px; top:100px; font-size:12px; font-family: 'Source Sans Pro'; font-weight: 300; color:#fff;}
+.oficinas img{border: 1px solid white; border-radius: 3px; overflow: hidden; margin-left: 20px; margin-bottom: 25px;}
 
 
 

@@ -31,24 +31,24 @@
 
     <script src="js/jquery.malihu.PageScroll2id.js"></script>
     <script>
-    		(function($){
-    			$(window).load(function(){
-    				
-    				/* Page Scroll to id fn call */
-    				$("#navigation-menu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
-    					highlightSelector:"#navigation-menu a"
-    				});
-    				
-    				/* demo functions */
-    				$("a[rel='next']").click(function(e){
-    					e.preventDefault();
-    					var to=$(this).parent().parent("section").next().attr("id");
-    					$.mPageScroll2id("scrollTo",to);
-    				});
-    				
-    			});
-    		})(jQuery);
-    	</script>
+        (function($){
+          $(window).load(function(){
+            
+            /* Page Scroll to id fn call */
+            $("#navigation-menu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+              highlightSelector:"#navigation-menu a"
+            });
+            
+            /* demo functions */
+            $("a[rel='next']").click(function(e){
+              e.preventDefault();
+              var to=$(this).parent().parent("section").next().attr("id");
+              $.mPageScroll2id("scrollTo",to);
+            });
+            
+          });
+        })(jQuery);
+      </script>
 
     <script type="text/javascript" src="js/jquery.reveal.js"></script>
     <script src="js/jquery_002.js"></script>
@@ -66,14 +66,14 @@
         
         <script>
         function init() {
-    	
-    	
+      
+      
             window.addEventListener('scroll', function(e){
-    		
+        
                 var distanceY = window.pageYOffset || document.documentElement.scrollTop,
                     shrinkOn = $( ".baner-area" ).height()-450,
                     header = document.querySelector("header");
-    				
+            
                 if (distanceY > shrinkOn) {
                     classie.add(header,"smaller");
                 } else {
@@ -579,20 +579,25 @@ podriamos hacer juntos</small>
                   </div>
                 </form>
               </div>
+              <p>ble</p>
               <div class="oficinas col-md-4 col-sm-12">
-                <p>ble</p>
-                <div class="textimages">El Buen Camino Santiago de Chile.<br>
-                  Antonio Bellet 70 of 1201. . PO 7500518. <br>
-                  Santiago de Chile.<br>
+                <div class="textimages">El Buen Camino Santiago de Chile.<br />
+                  Encomenderos 256 of 12, Las Condes,<br />
+                  PO 7500518. Santiago de Chile.<br />
                   +562 25709273
                 </div>
-                <img src="img/santiago.jpg" alt=""> </div>
+                <img src="img/santiago.jpg" alt="">
+              </div>
+
+              <div class="oficinas col-md-4 col-sm-12">
+                <div class="textimages">
+                  El Buen Camino Barcelona.<br />Carrer Taquigraf Martí 24 1º 4to.<br />PO 08028, Barcelona.<br />+34 606984512
+                </div>
+                <img src="img/barcelona.jpg" alt="">
               </div>
             </div>
-            <div class="row">
-            </div>
-          </div>  
-        </div>
+          </div>
+        </div>  
       </div>
     </div>
   </section>
@@ -600,7 +605,7 @@ podriamos hacer juntos</small>
 <!--===================FOOTER-->
 
 
-<div class="footetop">
+<!--<div class="footetop">
   <div class="container footerarea">
   
     <div class="row footer-img">
@@ -624,7 +629,7 @@ podriamos hacer juntos</small>
         <img src="img/thum-images3.jpg" alt=""> </div>
     </div>
   </div>
-</div>
+</div>-->
 </div>
 
 <div id="myModal" class="reveal-modal">
