@@ -68,7 +68,7 @@ video#bgvid {
 position: top; right: 0; bottom: 0;
 min-width: 100%; min-height: 100%;
 width: auto; height: auto; z-index: -1000;
-margin-top: -490px;
+margin-top: -570px;
 }
 
 
@@ -78,19 +78,26 @@ header ul li{ float:left; list-style:none; color:#fff;font-family: 'Source Sans 
 header ul li a{ color:#fff!important; text-transform:uppercase; }
 header ul li a:hover{ text-decoration:none;}
 
-.pink-cont{ background:url(../img/color-cont-top.jpg) center top repeat-x; padding-bottom:0px; overflow:hidden}
-.pink-cont .container{ min-height:812px;}
-.pink-cont h3{ text-align: center; font-family: 'Source Sans Pro'; font-weight: 300; font-size:40px; color:#fff; margin-bottom:40px;}
+.pink-cont{ background:#1c0716 url(../img/color-cont-top.jpg) center top repeat-x; padding-bottom:0px; overflow:hidden;}
+.pink-cont .container{ min-height:812px; text-align: center}
+.pink-cont h3{ text-align: center; font-family: 'Source Sans Pro'; font-weight: 300; font-size:40px; color:#fff; margin:70px auto;}
 .pink-cont h4{ text-align: center; font-family: 'Source Sans Pro'; font-weight: 300; font-size:18px; color:#fff; margin-bottom:70px; padding-top:70px; max-width: 650px; margin: 0 auto; line-height: 180%;}
+.pink-cont button{margin: 70px auto;}
 
 .color-gyararea{background:url(../img/graphy.png) center top repeat;}
 .color-gyararea .container{min-height:812px;} 
-.color-gyararea h3{ text-align: center; font-family: 'Source Sans Pro';font-size:32px; color:#452545; margin-bottom:36px; padding-top:80px;}
+.color-gyararea h3{ text-align: center; font-family: 'Source Sans Pro'; font-weight: 300; font-size:40px; color:#452545; margin-top: 70px; margin-bottom:0;}
+.color-gyararea h4{text-align: center; font-family: 'Source Sans Pro'; font-weight: 300; font-size:18px; color:#452545; margin-bottom:70px; padding-top:70px; max-width: 650px; margin: 0 auto; line-height: 180%;}
 .color-gyararea .container p{
 	color: #452545;
 }
 
-
+#section-4 h3{
+	color: white;
+}
+#section-4 p{
+	color: white; font-weight: 300; font-size: 14px; text-align: left;
+}
 
 
 
@@ -123,16 +130,19 @@ header ul li a:hover{ text-decoration:none;}
 .pro-listing{ overflow:hidden;}
 .pro-listing ul{ overflow:hidden; margin:0; padding:0px;}
 .pro-listing ul li{ position:relative;float:left;list-style:none; margin: 5px; /*border-right:2px solid #8b8d81;*/ overflow:hidden; }
-.pro-listing ul li:hover .hovertext{ display:block;position:absolute; left:0px; top:0px;background: rgba(64, 65, 52, .9); padding-bottom:60px;}
+.pro-listing ul li:hover .hovertext{ display:block;position:absolute; left:0px; top:0px;background: rgba(64, 65, 52, .9); padding-bottom:70px;}
 .hovertext{display:none;}
-.hovertext h4{ font-size:16px; text-align:center; margin-top:30px; color:#fff;font-family: 'Source Sans Pro';}
-.hovertext p{ color:#ffffff;font-family: 'Source Sans Pro', sans-serif; text-align:center; padding:0px 20px 0px 20px; font-weight:100; font-size:12px!important;}
-.hovertext a{ font-size:16px; color:#fff; border:2px solid #fff; width:140px; height:50px; margin-top:50px; display:block; text-align:center; line-height:50px; font-size:16px;font-family: 'Source Sans Pro'; margin-left:70px;}
+.pro-listing .hovertext h4{ font-size:16px; text-align:center; margin-top:0; color:#fff;font-family: 'Source Sans Pro';}
+.pro-listing .hovertext p{ color:#ffffff;font-family: 'Source Sans Pro', sans-serif; text-align:center; padding:0px 20px 0px 20px; font-weight:100; font-size:12px;}
+.hovertext a{ font-size:16px; color:#fff; border:2px solid #fff; width:140px; height:50px; margin:30px auto; display:block; text-align:center; line-height:50px; font-size:16px;font-family: 'Source Sans Pro';}
 .hovertext a:hover{ text-decoration:none;}
 .color-gyararea p{ color:#ffffff; font-size:20px; text-align:center;font-family: 'Source Sans Pro', sans-serif;}
 
-.likarea{ color:#fff; border:2px solid #fff; font-family: 'vollkornbold';width:233px; height:50px; display:block; text-align:center; line-height:50px; font-size:26px; margin-left:60px; text-align:center; margin:30px 0px 40px 487px;	}
-.likarea a{ color:#fff; text-decoration:none;}
+.likarea{ color:#452545; border:2px solid #452545; font-family: 'Source Sans Pro'; font-weight: 600; width:300px; height:50px; display:block; text-align:center; line-height:50px; font-size:26px; text-align:center; margin:30px auto;	}
+.likarea a{ color:#452545; text-decoration:none;}
+
+.likarea-alt{ color:#fff; border:2px solid #fff; font-family: 'Source Sans Pro'; font-weight: 600; width:400px; height:50px; display:block; text-align:center; line-height:50px; font-size:20px; text-align:center; margin:50px auto;	}
+.likarea-alt a{ color:#fff; text-decoration:none;}
 
 
 .gray-color{ background:#c56060; padding:20px 0px 30px 0px;}
@@ -543,8 +553,20 @@ header ul li a{ padding:3px 6px 3px 6px; display:block;}
 header.sticky-navigation.smaller {
 background: black;
 }
+@media (min-width: 991px) and (max-width: 1200px) {
+	.none-images {width: 300px;}
+	.baner-area{max-height: 670px; overflow: hidden;}
+}
 
-
+@media (min-width: 768px) and (max-width: 991px) {
+	.baner-area .container .logo{display: none; margin-bottom: 44px!important; margin-top: -100px!important; text-align: center!important;}
+    .baner-area .container p{font-size: 18px;}
+    .small-logo{ display:inline;}
+    .baner-area .container a {margin-left: auto!important;}
+    .servicios-home p{margin-bottom: 70px;}
+    .likarea-alt {margin-top: 0; margin-bottom: 80px;}
+    .none-images {width: 335px;}
+}
 
 @media (max-width: 768px){
 .container.footerarea {
