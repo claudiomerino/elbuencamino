@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>BUEN CAMINO</title>
+    <title>Estudio de diseño y </title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
@@ -15,19 +15,6 @@
     <link href="css/custom.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery-1.6.min.js"></script>
-
-
-
-    <!-- bxSlider Javascript file -->
-    <script src="js/jquery.bxslider.min.js"></script>
-
-    <script>
-    $(document).ready(function(){
-      slider = $('.bxslider').bxSlider();
-    slider.startAuto();
-    });
-    </script>
-
 
     <script src="js/jquery.malihu.PageScroll2id.js"></script>
     <script>
@@ -45,14 +32,11 @@
               var to=$(this).parent().parent("section").next().attr("id");
               $.mPageScroll2id("scrollTo",to);
             });
-            
+
           });
         })(jQuery);
       </script>
-
-    <script type="text/javascript" src="js/jquery.reveal.js"></script>
     <script src="js/jquery_002.js"></script>
-    <script src="js/demo.js"></script>
     <script src="js/waypoints.js"></script>
         <script src="js/waypoints-sticky.js"></script>
     <script type="text/javascript">
@@ -60,14 +44,11 @@
                 $('.sticky-navigation').waypoint('sticky');
             });
         </script>
-        
-        
+  
         <script src="js/classie.js"></script>
-        
         <script>
         function init() {
-      
-      
+
             window.addEventListener('scroll', function(e){
         
                 var distanceY = window.pageYOffset || document.documentElement.scrollTop,
@@ -80,61 +61,61 @@
                     if (classie.has(header,"smaller")) {
                         classie.remove(header,"smaller");
                     }
-                }
-            });
-        }
-        window.onload = init();
-    </script>
+                  }
+                });
+              }
+          window.onload = init();
+        </script>
     <script src="js/holder.js"></script>
   </head>
+
+  <body>
+
 <!-- NAVBAR ================================================== -->
-<body>
 
-<header class="sticky-navigation">
-  <div class="container">
-    <div id="header_nav" class="navarea">
-      <div class="small-logo col-md-4"><img src="img/small-logo.png" alt=""></div>
-      <ul id="navigation-menu" class="pull-right">
-        <li><a href="#section-1">Hacemos</a></li>
-        <li><a  href="#section-2">Hemos hecho</a></li>
-        <li><a href="#section-3">Decimos</a></li>
-        <li><a  href="#section-4">Conversemos</a></li>
-      </ul>
+  <header class="sticky-navigation">
+    <div class="container">
+      <div id="header_nav" class="navarea">
+        <div class="small-logo col-md-4"><img src="img/small-logo.png" alt=""></div>
+        <ul id="navigation-menu" class="pull-right">
+          <li><a href="#section-1">Servicios</a></li>
+          <li><a  href="#section-2">Clientes</a></li>
+          <!--<li><a href="#section-3">Decimos</a></li>-->
+          <li><a  href="#section-4">Contáctanos</a></li>
+        </ul>
+      </div>
+    </div> 
+  </header>
+
+  <!--============================VIDEO-->
+
+  <div class="baner-area">
+    <div class="container">
+      <div class="conte-top">
+        <div  class="col-md-12">
+          <div class="logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+          </div>
+          <p>Somos una consultora digital donde te ayudamos a conocer a tus usuarios y a tomar desiciones de diseño basadas en evidencia concreta.</p>
+          <div id="navigation-menu" class="likarea-alt">
+            <a href="#section-4">Mira para todo lo que somos buenos.</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div> 
-</header>
-
-
-<!--============================VIDEO-->
-<div class="baner-area">
-  <ul class="bxslider">
-    <li>&nbsp;</li>
-  </ul>
-  <div class="container">
-    <div class="conte-top">
-      <div  class="col-md-12">
-        <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
-        <p>Somos una consultora digital donde te ayudamos a conocer a tus usuarios y a tomar desiciones de diseño basadas en evidencia concreta.</p>
-        <div id="navigation-menu" class="likarea-alt"><a href="#section-4">Mira para todo lo que somos buenos.</a></div>
-        <span class="col-md-9 full-right">Focus group con usuarios en Australia para RailEurope.</span> </div>
-    </div>
-  </div>
-  <video autoplay loop id="bgvid">
+    <video autoplay loop id="bgvid">
       <source src="vid/ebc.webm" type="video/webm">
     </video>
-</div>
-
-<div id="content">
-
-<!--===================A ESTO NOS DEDICAMOS-->
-  <section id="section-1">
-  
-    <div class="pink-cont">
-      <div class="container">
-        <div class="row">
-          <h4>Somos un equipo reducido de profesionales repartido por distintas ciudades del mundo donde hacemos muchas cosas, pero no de todo.</h4>
-        </div>
-        <h3>Esto es lo que más hacemos</h3>
+  </div>
+  <!--===================A ESTO NOS DEDICAMOS-->
+    <div id="content">
+    <section id="section-1">
+      <div class="pink-cont">
+        <div class="container">
+          <div class="row">
+            <h4>Somos un equipo reducido de profesionales repartido por distintas ciudades del mundo donde hacemos muchas cosas, pero no de todo.</h4>
+          </div>
+          <h3>Esto es lo que más nos piden</h3>
             <div class="row servicios-home">
               <div class="col-sm-6 col-md-3">
                 <img src="img/ico-investigacion.jpg" alt="..." class="img-circle">
@@ -167,204 +148,178 @@
             </div>
             <div class="row">
                <div class="likarea-alt"><a href="#section-4">Mira para todo lo que somos buenos.</a></div> 
-            </div>
-
-
-     
-          
-          
-          
+            </div>   
+          </div>
         </div>
-        
-      </div>
-    </div>
-  
-    
-    </div>
-     
-  </section>
-
-
-<!--===================HEMOS HECHO-->
-
-<section id="section-2">
-  <div class="color-gyararea">
-    <div class="container">
-      <div class="row">
+      </div> 
+    </section>
+  <!--===================HEMOS HECHO-->
+  <section id="section-2">
+    <div class="color-gyararea">
+      <div class="container">
+        <div class="row">
           <h4>Trabajamos con clientes globales y locales que les interesa saber lo que sus clientes piensan y de que manera diseñar para ellos.</h4>
         </div>
-        <h3>Lo último que hemos hecho</h3>
-      <div class="row">
-        <h3></h3>
-      </div>
-      <div class="pro-listing">
-        <ul>
-          <li>
-            <div class="none-images">
-              <img src="img/image-thum1.jpg" alt="">
-            </div>
-            <div class="ipone-images">
-              <img src="img/logo-box1.jpg" alt="">
-            </div>
-            <div class="hovertext">
-              <h4>Raileurope 4A.</h4>
-              <p>Investigación de mercado, pruebas con usuarios y arquitectura de información para sus sitios de Australia, Brasil y Argentina<br /><br /><p>
-              <a href="#">ver caso.</a>
-            </div>
-          </li>
-          <li>
-            <div class="none-images">
-              <img src="img/image-thum2.jpg" alt="">
-            </div>
-            <div class="ipone-images">
-              <img src="img/logo-box1.jpg" alt="">
-            </div>
-            <div class="hovertext">
-              <h4>Proximo games.com.br</h4>
-              <p>Pruebas de usabilidad y optimización de escenarios clave para mejora de proceso de compra en tienda online de Brasil especializada en videojuegos</p>
-              <a href="#">Ver proyecto</a>
-            </div>
-          </li>
-          <li>
-            <div class="none-images">
-              <img src="img/image-thum3.jpg" alt="">
-            </div>
-            <div class="ipone-images">
-              <img src="img/logo-box1.jpg" alt="">
-            </div>
-            <div class="hovertext">
-              <h4>Proximo games.com.br</h4>
-              <p>Pruebas de usabilidad y optimización de escenarios clave para mejora de proceso de compra en tienda online de Brasil especializada en videojuegos</p>
-              <a href="#">Ver proyecto</a>
-            </div>
-          </li>
-          <li>
-            <div class="none-images">
-              <img src="img/image-thum4.jpg" alt="">
-            </div>
-            <div class="ipone-images">
-              <img src="img/logo-box1.jpg" alt="">
-            </div>
-            <div class="hovertext">
-              <h4>Proximo games.com.br</h4>
-              <p>Pruebas de usabilidad y optimización de escenarios clave para mejora de proceso de compra en tienda online de Brasil especializada en videojuegos</p>
-              <a href="#">Ver proyecto</a>
-            </div>
-          </li>
-          <li>
-            <div class="none-images">
-              <img src="img/image-thum5.jpg" alt="">
-            </div>
-            <div class="ipone-images">
-              <img src="img/logo-box1.jpg" alt="">
-            </div>
-            <div class="hovertext">
-              <h4>Proximo games.com.br</h4>
-              <p>Pruebas de usabilidad y optimización de escenarios clave para mejora de proceso de compra en tienda online de Brasil especializada en videojuegos</p>
-              <a href="#">Ver proyecto</a>
-            </div>
-          </li>
-          <li>
-            <div class="none-images">
-              <img src="img/image-thum6.jpg" alt="">
-            </div>
-            <div class="ipone-images">
-              <img src="img/logo-box1.jpg" alt="">
-            </div>
-            <div class="hovertext">
-              <h4>Proximo games.com.br</h4>
-              <p>Pruebas de usabilidad y optimización de escenarios clave para mejora de proceso de compra en tienda online de Brasil especializada en videojuegos</p>
-              <a href="#">Ver proyecto</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="row">
-        <h3>Sabemos que cada proyecto es único.</h3>
-      </div>
-      <div class="">
-        <h4>Y que conversando se llega a acuerdos. Nos encantaría escuchar tu proyecto y que juntos veamos la mejor manera para colaborar.  Déjanos tus datos en el formulario y nos contactaremos contigo lo antes posible.</h4>
-
-        <div class="likarea"><a href="#section-4">¡Conversemos!</a>
-        </div>      
-      </div>
-
-         
-    </div>
-  </div>
-</section>
-
-
-
-<!--===================CONTACTO-->
-
-
-  <section id="section-4">
-    <div class="content-area">
-      <div class="inner-cont">
-        <div class="container">
-          <div class="container">
-            <div class="row">
-              <h3>Nos gusta conversar</h3>
-            </div>
-            <div class="row">
-              <div class="formulario col-md-8">
-                 <p>Llena el formulario a continuación o envíanos un correo a hola@elbuencamino.com</p>
-                <form>
-                  <div class="col-md-6">
-                    <input type="text" placeholder="¿Tu nombre?">
-                  </div>
-                  <div class="col-md-6">
-                    <input type="text" placeholder="Correo electrónico">
-                  </div>
-                  <div class="col-md-12">
-                    <textarea>¿Qué podemos hacer por ti?</textarea>
-                  </div>
-                  <div class="col-md-8">
-                    <input type="submit">
-                  </div>
-                </form>
+          <h3>Lo último que hemos hecho</h3>
+        <div class="row">
+          <h3></h3>
+        </div>
+        <div class="pro-listing">
+          <ul>
+            <li>
+              <div class="none-images">
+                <img src="img/image-thum1.jpg" alt="">
               </div>
-              <p>ble</p>
-              <div class="oficinas col-md-4 col-sm-12">
-                <div class="textimages">El Buen Camino Santiago de Chile.<br />
-                  Encomenderos 256 of 12, Las Condes,<br />
-                  PO 7500518. Santiago de Chile.<br />
-                  +562 25709273
-                </div>
-                <img src="img/santiago.jpg" alt="">
+              <div class="ipone-images">
+                <img src="img/logo-box1.jpg" alt="">
               </div>
-
-              <div class="oficinas col-md-4 col-sm-12">
-                <div class="textimages">
-                  El Buen Camino Barcelona.<br />Carrer Taquigraf Martí 24 1º 4to.<br />PO 08028, Barcelona.<br />+34 606984512
-                </div>
-                <img src="img/barcelona.jpg" alt="">
+              <div class="hovertext">
+                <h4>Raileurope 4A.</h4>
+                <p>Investigación de mercado, pruebas con usuarios y arquitectura de información en distintos países para e-commerce de viajes en trenes.<p>
+                <a href="#">ver caso.</a>
               </div>
-            </div>
-          </div>
-        </div>  
+            </li>
+            <li>
+              <div class="none-images">
+                <img src="img/image-thum2.jpg" alt="">
+              </div>
+              <div class="ipone-images">
+                <img src="img/logo-box1.jpg" alt="">
+              </div>
+              <div class="hovertext">
+                <h4>Plataforma Megaclub</h4>
+                <p>Investigación de mercado y rediseño de la arquitectura de información para una plataforma de gamification utilizada para incentivar el cumplimiento de metas dentro de un equipo.</p>
+                <a href="#">Ver proyecto</a>
+              </div>
+            </li>
+            <li>
+              <div class="none-images">
+                <img src="img/image-thum3.jpg" alt="">
+              </div>
+              <div class="ipone-images">
+                <img src="img/logo-box1.jpg" alt="">
+              </div>
+              <div class="hovertext">
+                <h4>Lexdir.com</h4>
+                <p>Pruebas de usabilidad y optimización de la arquitectura de información para startup dedicada a conectar abogados con usuarios con problemas legales.</p>
+                <a href="#">Ver proyecto</a>
+              </div>
+            </li>
+            <li>
+              <div class="none-images">
+                <img src="img/image-thum4.jpg" alt="">
+              </div>
+              <div class="ipone-images">
+                <img src="img/logo-box1.jpg" alt="">
+              </div>
+              <div class="hovertext">
+                <h4>Uc.cl</h4>
+                <p>Arquitectura de Información y diseño de interfaz para rediseño de los primeros tres niveles del sitio público de una universidad Chilena.</p>
+                <a href="#">Ver proyecto</a>
+              </div>
+            </li>
+            <li>
+              <div class="none-images">
+                <img src="img/image-thum5.jpg" alt="">
+              </div>
+              <div class="ipone-images">
+                <img src="img/logo-box1.jpg" alt="">
+              </div>
+              <div class="hovertext">
+                <h4>Santanderrio.com.ar</h4>
+                <p>Rediseño del sitio público del banco Santander Río, en Argentina. Desde la investigación inicial hasta el desarrollo del front-end y la validación con usuarios.</p>
+                <a href="#">Ver proyecto</a>
+              </div>
+            </li>
+            <li>
+              <div class="none-images">
+                <img src="img/image-thum6.jpg" alt="">
+              </div>
+              <div class="ipone-images">
+                <img src="img/logo-box1.jpg" alt="">
+              </div>
+              <div class="hovertext">
+                <h4>venyviaja.com</h4>
+                <p>Pruebas de usabilidad y optimización de escenarios clave para mejora de proceso de compra en tienda online de Brasil especializada en videojuegos</p>
+                <a href="#">Ver proyecto</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <h3>Sabemos que cada proyecto es único.</h3>
+        </div>
+        <div class="">
+          <h4>Y que conversando se llega a acuerdos. Nos encantaría escuchar tu proyecto y que juntos veamos la mejor manera para colaborar.  Déjanos tus datos en el formulario y nos contactaremos contigo lo antes posible.</h4>
+          <div class="likarea seccion4">
+            <a href="#section-4">¡Conversemos!</a>
+          </div>      
+        </div>   
       </div>
     </div>
   </section>
+  <!--===================CONTACTO-->
+    <section id="section-4">
+      <div class="content-area">
+        <div class="inner-cont">
+          <div class="container">
+            <div class="container">
+              <div class="row">
+                <h3>Nos gusta conversar</h3>
+              </div>
+              <div class="row">
+                <div class="formulario col-md-8">
+                   <p>Llena el formulario a continuación o envíanos un correo a hola@elbuencamino.com</p>
+                  <form>
+                    <div class="col-md-6">
+                      <input type="text" placeholder="¿Tu nombre?">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" placeholder="Correo electrónico">
+                    </div>
+                    <div class="col-md-12">
+                      <textarea>¿Qué podemos hacer por ti?</textarea>
+                    </div>
+                    <div class="col-md-8">
+                      <input type="submit">
+                    </div>
+                  </form>
+                </div>
+                <div class="oficinas col-md-4 col-sm-12">
+                  <p>También podeis pasar a vernos a:</p>
+                </div>
+                <div class="oficinas col-md-4 col-sm-12">
+                  <div class="textimages"><strong>El Buen Camino Santiago de Chile.</strong><br />
+                    Encomenderos 256 of 12, Las Condes,<br />
+                    PO 7500518. Santiago de Chile.<br />
+                    +562 25709273
+                  </div>
+                  <img src="img/santiago.jpg" alt="">
+                </div>
 
-<!--===================FOOTER-->
-
-</div>
-
-<div id="myModal" class="reveal-modal">
-  <h1>A esto nos dedicamos</h1>
-  <p>Usamos técnicas de investigación y auditoría para descubrir y entender los desafíos de cada proyecto. De este análisis salen las recomendaciones estratégicas para mejorar la experiencia de tus usuarios.</p>
-  <a class="close-reveal-modal">&#215;</a>
-</div>
-<!-- Bootstrap core JavaScript
-    ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/bootstrap.js"></script>
-
-
-</body>
+                <div class="oficinas col-md-4 col-sm-12">
+                  <div class="textimages">
+                    <strong>El Buen Camino Barcelona.</strong><br />Carrer Taquigraf Martí 24 1º 4to.<br />PO 08028, Barcelona.<br />+34 606984512
+                  </div>
+                  <img src="img/barcelona.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+  <!--===================FOOTER-->
+    <div id="myModal" class="reveal-modal">
+      <h1>A esto nos dedicamos</h1>
+      <p>Usamos técnicas de investigación y auditoría para descubrir y entender los desafíos de cada proyecto. De este análisis salen las recomendaciones estratégicas para mejorar la experiencia de tus usuarios.</p>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+  <!-- Bootstrap core JavaScript
+      ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
 </html>
