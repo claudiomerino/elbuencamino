@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="Estudio de diseño de Experiencia de usuarios y estrategia digital en Santiago de Chile" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Estudio de diseño Ux y estrategia digital en Santiago de Chile</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -48,9 +49,10 @@
     </nav>
     <section id="section1">
       <div id="video_container">
-        <video autoplay loop id="bgvid" poster="img/banner.jpg">
-          <source src="vid/ebc.webm" type="video/webm">
+        <video autoplay loop id="bgvid" poster="img/transparent.png">
           <source src="vid/ebc.mp4" type="video/mp4">
+          <source src="vid/ebc.webm" type="video/webm">
+          <source src="vid/ebc.m4v" type="video/m4v">
             Tu navegador no sopora el tag de video
         </video>
       </div>
@@ -89,9 +91,9 @@
               <p>Diseñamos y desarrollamos con cariño y oficio interfaces que se adaptan a las distintas pantallas y dispositivos de tus usuarios.</p>
             </div>
           </div>
-           <button><a href="#section3">Esto es todo lo que hacemos.</a></button>
+          <button type="button" data-toggle="collapse" data-target="#servicios-todos"><a>Esto es todo lo que hacemos.</a></button>
         </div> 
-        <div class="servicios-todos">
+        <div id="servicios-todos" class="collapse">
           <ul class="media-list">
             
             <li class="media col-md-6 col-sm-6">
