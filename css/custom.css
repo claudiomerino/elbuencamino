@@ -160,6 +160,9 @@ header figure{
 header h2{
 	font-size: 1.6em;
 }
+header button{
+	margin: 10px 10px;
+}
 input{ 
 	background: url(../img/text-box.png) left top repeat-x; 
 	border: medium none; 
@@ -269,15 +272,15 @@ textarea{
      top: 0;
      bottom: 0;
      left: 0;
-     background: url(../img/polina.jpg) no-repeat;
+     background: #691954;
      overflow-y: hidden;
      min-width:100%;
-     min-height: 950px;
+     min-height: 850px;
      z-index: -500;
+     max-width: 100%;
 }
 
 #section2{
-	margin-top: 100px;
 	background:#1c0716 url(../img/color-cont-top.jpg) center top repeat-x;
 	min-height: 600px;
 	color: white;
@@ -361,6 +364,7 @@ textarea{
 /*Clases*/
 
 .acuerdos{
+	text-align: center;
 	margin-bottom: 50px;
 }
 .acuerdos p{
@@ -372,34 +376,48 @@ textarea{
 .caption p{
 	font-weight: 300;
 }
-
-.clientes {
-    float: left;
-    position: relative;
-    margin-bottom: 20px;
+.clientes{
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.clientes ul{
+	padding: 0;
+}
+.clientes li{
+	list-style: none;
 }
 
-.clientes span {
+.cliente {
+    position: relative;
+    margin: 10px;
+	width: 350px;
+}
+
+.cliente span {
     opacity: 0;
-    height: 250px;
-    width: 370px;
+    height: 236px;
+    width: 350px;
     position: absolute;
     background: rgba(0,0,0,.7);
     top: 0;
-    left: 1em;
+    left: 0;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s;
 }
+.cliente img{
+	margin-left: -15px;
+	width: 350px;
+}
 
-.clientes:hover span {
+.cliente:hover span {
     opacity: 1;
 }
 
-.clientes span a {
+.cliente span a {
     display: block;
 }
-.clientes p{
+.cliente p{
 	color: white;
 	font-size: .9em;
 	font-weight: 300;
@@ -443,7 +461,7 @@ textarea{
 }
 
 .oficinas img{
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.7);
 	border: 1px solid white; 
 	border-radius: 3px; 
 	overflow: hidden; 
@@ -458,44 +476,184 @@ textarea{
 	margin: 1em auto;
 	font-weight: 600;
 }
+
+.servicios-todos{
+	text-align: left;
+	font-weight: 300;
+	font-size: .9em;
+}
+
 .social ul{margin-left: -5px;}
 .social li{display: inline; margin:0 10px; list-style: none;}
 
+@media (min-width: 990px) {
+	.flaticon-heart30:before {
+    margin-top: 0!important;
+	}
 
+	.flaticon-html-tag:before {
+	    margin-top: 0!important;
+	}
+
+}
 
 
 @media (min-width: 767px) {
   .navbar-nav.nav-justified > li{
       float:none;
   }
-}
-  
-.navbar-nav {
-  margin: 1px 1px; 
-}  
+  #bgvid{
+  	overflow: hidden;
+  }
+	.flaticon-heart30:before {
+	    margin-top: 40px;
+	}
 
-.navbar-toggle {
-	outline:0;
-}
+	.flaticon-html-tag:before {
+	    margin-top: 40px;
+	}
+	.cliente h5{
+		margin-top: 10px;
+	}
+	.cliente p{
+		font-size: .8em;
+	}
+	.cliente{
+		width: 319px;
+	}
+	.cliente span {
+	    height: 215px;
+	    width: 319px;
+	}
+	.cliente img{
+		max-width: 319px;
+	}
+	.social ul{
+		margin: 20px auto;
+		text-align: center;
+	}
 
-.divider {
-	height:50px;
-}
-
-.panel {
-	border-width:0;
-}
-
-@media (max-width: 768px) {
-	header {
-	
+@media (max-width: 767px){
+	#bgvid{
+		display: none;
 	}
 }
 
 
 
+@media (max-width: 360px){
+	#section2 h3{
+		font-size: 1.5em;
+	}
+	#section3 h4{
+	font-size: 1em;
+	}
+	#section3 h3{
+	font-size: 1.5em;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	}
+	#section4 h3{
+	font-size: 1.5em;
+	margin-bottom: 0;
+	margin-top: 20px;
+	}
+	.cliente{
+		width: 319px;
+	}
+	.cliente span {
+	    height: 224px;
+	    width: 329px;
+	    padding-top: 24px;
+	    margin-left: -25px;
+	}
+	.cliente img{
+		max-width: 330px;
+		margin-left: -40px;
+	}
+	.cliente h5{
+		display: none;
+	}
 
 
+	.flaticon-male226:before{
+    padding: 15px 25px;
+    font-size: 50px;
+    margin-top: -40px;
+	}
+	.flaticon-heart30:before {
+		padding: 15px 25px 15px 35px;
+	    font-size: 50px;
+	    margin-top: 40px;
+	}
+
+	.flaticon-html-tag:before {
+		padding: 15px 25px;
+	    font-size: 50px;
+	    margin-top: 40px;
+	}
+	.flaticon-stopwatch6:before {
+		padding: 15px 30px;
+	    font-size: 50px;
+	    margin-top: 40px;
+	}
+	.formulario p{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 320px) {
+	#wrap{
+}
+	header img {
+		width: 60%;
+		margin-top: -120px;
+	}
+	header h2{
+		font-size: 1.2em;
+		margin-top: -30px;
+	}
+	.cliente{
+		width: 280px;
+	}
+	.cliente span {
+	    height: 196px;
+	    width: 289px;
+	    padding-top: 0;
+	    margin-left: -25px;
+	}
+	.cliente img{
+		max-width: 290px;
+		margin-left: -40px;
+	}
+	.acuerdos h3{
+		font-size: 1.2em;
+	}
+	.acuerdos h4{
+		font-size: 1.2em!important;
+	}
+	.acuerdos p{
+		font-size: .9em;
+	}
+	.oficinas{
+		margin-left: -20px;
+	}
+	.oficinas img{
+		width: 290px;
+	}
+	.oficinas h5{
+	padding-top: 20px;
+	clear: both;
+	}
+	.social {
+		margin-left: -10px;
+	}
+	.social li{
+		margin: 0 7px;
+	}
+}
 
 
 
