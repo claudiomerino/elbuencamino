@@ -53,29 +53,24 @@ h5{
 font-style: normal;
 margin-left: 0;
 color: white;
-
-
-
-
-}.flaticon-behance6:before {
-	content: "\e001";
 }
-.flaticon-circle6:before {
+.flaticon-behance:before {
+	content: "\e002";
+}
+.flaticon-facebook:before {
 	content: "\e004";
 }
-.flaticon-github3:before {
+.flaticon-github:before {
 	content: "\e007";
 }
-.flaticon-program:before {
+.flaticon-skype:before {
 	content: "\e00f";
 }
-.flaticon-twitter4:before {
+.flaticon-twitter:before {
 	content: "\e016";
 }
-
-
-.flaticon-male226:before{
-	content: "\e00e";
+.flaticon-user-research:before {
+	content: "\e00b";
     padding: 15px 33px;
     font-size: 85px;
     display: inline-block;
@@ -84,8 +79,8 @@ color: white;
     -webkit-border-radius: 100px;
     border-radius: 100px;
 }
-.flaticon-heart30:before {
-	content: "\e00a";
+.flaticon-ux:before {
+	content: "\e008";
 	padding: 15px 37px 15px 50px;
     font-size: 85px;
     display: inline-block;
@@ -95,8 +90,8 @@ color: white;
     border-radius: 100px;
 }
 
-.flaticon-html-tag:before {
-	content: "\e00b";
+.flaticon-front:before {
+	content: "\e005";
 	padding: 15px 35px;
     font-size: 85px;
     display: inline-block;
@@ -105,7 +100,7 @@ color: white;
     -webkit-border-radius: 100px;
     border-radius: 100px;
 }
-.flaticon-stopwatch6:before {
+.flaticon-user-tests:before {
 	content: "\e013";
 	padding: 15px 40px;
     font-size: 85px;
@@ -115,10 +110,70 @@ color: white;
     -webkit-border-radius: 100px;
     border-radius: 100px;
 }
-.flaticon-thin1:before {
+.flaticon-arrow:before {
 	content: "\e015";
 	font-size: 40px;
 	color: #ccc;
+}
+.flaticon-IA:before {
+	content: "\e000";
+	font-size: 3em;
+}
+.flaticon-survey:before {
+	content: "\e001";
+	font-size: 3em;
+}
+.flaticon-prototype:before {
+	content: "\e003";
+	font-size: 3em;
+}
+.flaticon-strategy:before {
+	content: "\e006";
+	font-size: 3em;
+}
+.flaticon-html:before {
+	content: "\e009";
+	font-size: 2.2em;
+}
+.flaticon-recruting:before {
+	content: "\e00a";
+	font-size: 3em;
+}
+.flaticon-focus:before {
+	content: "\e00c";
+	font-size: 3em;
+}
+.flaticon-redesign:before {
+	content: "\e00d";
+	font-size: 3em;
+}
+.flaticon-cardsort:before {
+	content: "\e00e";
+	font-size: 3em;
+}
+.flaticon-responsive:before {
+	content: "\e010";
+	font-size: 3em;
+}
+.flaticon-optimization:before {
+	content: "\e011";
+	font-size: 3em;
+}
+.flaticon-benchmark:before {
+	content: "\e012";
+	font-size: 3em;
+}
+.flaticon-user-test:before {
+	content: "\e014";
+	font-size: 3em;
+}
+.flaticon-interview:before {
+	content: "\e017";
+	font-size: 3em;
+}
+.flaticon-visual:before {
+	content: "\e018";
+	font-size: 3em;
 }
 
 
@@ -148,14 +203,14 @@ color: white;
 }
 header{
   	height:100%;
-	min-height:500px;
+	min-height:600px;
 	margin-top: 100px;
 	text-align: center;
 	color: white;
 }
 
 header figure{
-	margin: 60px auto 0 auto;
+	margin: 50px auto 0 auto;
 }
 header h2{
 	font-size: 1.6em;
@@ -190,7 +245,7 @@ textarea{
 /*IDs*/
 #bgvid {
 	min-width: 100%;
-	z-index: -1000;
+	z-index: 1;
 }
 
 #lexdir .modal-header{
@@ -366,7 +421,7 @@ textarea{
 
 .acuerdos{
 	text-align: center;
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 .acuerdos p{
 	margin-bottom: 30px;
@@ -509,21 +564,25 @@ textarea{
 	.flaticon-stopwatch6:before {
 	    margin-top: 40px;
 	}
+	.clientes{
+		margin-left: -20px;
+	}
 	.cliente h5{
-		margin-top: 10px;
+		margin-top: 20px;
 	}
 	.cliente p{
 		font-size: .8em;
 	}
 	.cliente{
-		width: 319px;
+		margin: 20px auto;
+		width: 300px;
 	}
 	.cliente span {
-	    height: 215px;
-	    width: 319px;
+	    height: 250px;
+	    width: 300px;
 	}
 	.cliente img{
-		max-width: 319px;
+		width: 300px;
 	}
 	.social ul{
 		margin: 20px auto;
@@ -532,26 +591,19 @@ textarea{
 	#wrap{
 }
 	header img {
-		width: 60%;
-		margin-top: -120px;
-	}
+		width: 45%;
+		margin-top: -140px;	}
 	header h2{
 		font-size: 1.2em;
 		margin-top: -30px;
 	}
-	.cliente{
-		width: 280px;
+	header{
+		
+		padding-bottom: 20px;
+		max-width: auto;
+		min-height: 400px;
 	}
-	.cliente span {
-	    height: 196px;
-	    width: 289px;
-	    padding-top: 0;
-	    margin-left: -25px;
-	}
-	.cliente img{
-		max-width: 290px;
-		margin-left: -40px;
-	}
+
 	.acuerdos h3{
 		font-size: 1.2em;
 	}
@@ -563,16 +615,17 @@ textarea{
 	}
 	.oficinas{
 		margin-left: -20px;
+		display: inline-block;
 	}
 	.oficinas img{
 		width: 290px;
 	}
 	.oficinas h5{
 	padding-top: 20px;
-	clear: both;
+
 	}
 	.social {
-		margin-left: -10px;
+		margin-left: -40px;
 	}
 	.social li{
 		margin: 0 7px;
@@ -580,11 +633,22 @@ textarea{
 		#bgvid{
 		display: none;
 	}
-}
-@media(min-width:768px){
-	#bgvid{
+	#section1{
+		max-height: auto;
+	}
+	.caption{
+		margin-bottom: 40px;
+	}
+	.navbar-header{
 		display: none;
 	}
+	.navbar-inverse{
+		display: none;
+	}
+}
+
+
+@media(min-width:768px){
 	.flaticon-heart30:before {
     margin-top: 0!important;
 	}
@@ -593,7 +657,7 @@ textarea{
 	    margin-top: 0!important;
 	}
 	.cliente h5{
-		margin-top: 10px;
+		margin-top: 0;
 	}
 	.cliente p{
 		font-size: .8em;
@@ -602,7 +666,8 @@ textarea{
 		width: 319px;
 	}
 	.cliente span {
-	    height: 215px;
+		padding-top: 20px;
+	    height: 227px;
 	    width: 319px;
 	}
 	.cliente img{
@@ -619,109 +684,53 @@ textarea{
 	.flaticon-html-tag:before {
 	    margin-top: 40px;
 	}
-
-}
-@media(min-width:992px){}
-@media(min-width:1200px){}
-
-
-/*
-
-
-
-@media (min-width: 767px) {
-  .navbar-nav.nav-justified > li{
-      float:none;
-  }
-  #bgvid{
-  	overflow: hidden;
-  }
-	.flaticon-heart30:before {
-	    margin-top: 40px;
-	}
-
-	.flaticon-html-tag:before {
-	    margin-top: 40px;
-	}
-	.cliente h5{
-		margin-top: 10px;
-	}
-	.cliente p{
-		font-size: .8em;
-	}
-	.cliente{
-		width: 319px;
-	}
-	.cliente span {
-	    height: 215px;
-	    width: 319px;
-	}
-	.cliente img{
-		max-width: 319px;
-	}
-	.social ul{
-		margin: 20px auto;
-		text-align: center;
-	}
-
-
-
-@media (max-width: 320px) {
-	#wrap{
-}
-	header img {
-		width: 60%;
-		margin-top: -120px;
-	}
-	header h2{
-		font-size: 1.2em;
-		margin-top: -30px;
-	}
-	.cliente{
-		width: 280px;
-	}
-	.cliente span {
-	    height: 196px;
-	    width: 289px;
-	    padding-top: 0;
-	    margin-left: -25px;
-	}
-	.cliente img{
-		max-width: 290px;
-		margin-left: -40px;
-	}
-	.acuerdos h3{
-		font-size: 1.2em;
-	}
-	.acuerdos h4{
-		font-size: 1.2em!important;
-	}
-	.acuerdos p{
-		font-size: .9em;
-	}
-	.oficinas{
-		margin-left: -20px;
-	}
-	.oficinas img{
-		width: 290px;
-	}
-	.oficinas h5{
-	padding-top: 20px;
-	clear: both;
-	}
-	.social {
-		margin-left: -10px;
-	}
-	.social li{
-		margin: 0 7px;
-	}
-		#bgvid{
+	#bgvid{
 		display: none;
 	}
 
-}*/
-
-
+}
+@media(min-width:992px){
+		#bgvid{
+		display: block;
+	}
+		.cliente{
+			width:285px;
+			margin-left: 5px;
+		}
+		.cliente span{
+			width: 285px;
+			height: 205px;
+		}
+		.clientes h5{
+			display: none;
+		}
+		.cliente img{
+			width: 285px;
+		}
+}
+@media(min-width:1200px){
+	#bgvid{
+	display: block;
+	}
+	.cliente{
+	width: 350px;
+	}
+	.cliente h5{
+		display: block;
+		margin-top: 10px;
+	}
+	.cliente p{
+		font-size: .8em;
+	}
+	.cliente span {
+	    height: 250px;
+	    width: 350px;
+	    padding-top:20px;
+	}
+	.cliente img{
+		min-width: 350px;	
+	}
+}
 
 
 
