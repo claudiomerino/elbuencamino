@@ -253,7 +253,9 @@ textarea{
 	min-height: 300px;
 	border-radius: 5px 5px 0 0;
 }
-
+#lexdir img{
+	max-width: 100%;
+}
 #logo-nav{
 	display: inline-block;
 }
@@ -264,6 +266,16 @@ textarea{
 	border-radius: 5px 5px 0 0;
 	text-align: center;
 }
+#santander .modal-header{
+	background: #df0a1e url(../img/santander-cabecera.jpg) center;
+	min-height: 300px;
+	border-radius: 5px 5px 0 0;
+	text-align: center;
+}
+#megaclub img{
+	max-width: 100%;
+}
+
 #nav {
   width: 100%;
 }
@@ -321,6 +333,11 @@ textarea{
 	min-height: 300px;
 	border-radius: 5px 5px 0 0;
 	text-align: center;
+}
+#railEurope object{
+	width: 100%;
+	min-height: 600px;
+	margin: 0 auto;
 }
 #section1 #video_container{
      position: absolute;
@@ -493,6 +510,10 @@ textarea{
 }
 .modal-header img{
 	margin: 120px 30px auto;
+}
+.modal-header h4{
+	color: white;
+	font-weight: 300;
 }
 .navbar-inverse{
 	background: #681a54;
