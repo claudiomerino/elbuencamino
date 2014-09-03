@@ -16,6 +16,15 @@
     <div id="wrap">
     <header class="masthead">
       <div class="container">
+                <?php  
+
+      // check for a successful form post  
+      if (isset($_GET['s'])) echo "<br><div class=\"alert alert-success alert-dismissible text-center\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\"><span aria-hidden=\"true\">&times;</span><span class=\"sr-only\">Close</span></button>".$_GET['s']."</div>";  
+
+      // check for a form error  
+      elseif (isset($_GET['e'])) echo "<br><div class=\"alert alert-danger alert-dismissible text-center\" role=\"alert\">".$_GET['e']."</div>";  
+
+?>
         <figure><img src="img/logo-ebc.png" width="300" alt="Estudio de diseño de interacción El Buen Camino" /></figure>
         <h2>Somos una consultora digital donde te ayudamos a conocer a tus usuarios y a tomar desiciones de diseño basadas en evidencia concreta.</h2>
         <div class="row">
@@ -184,6 +193,16 @@
       <h3>Lo último que hemos hecho</h3>
       <div class="clientes col-md-12">
         <ul>
+           <li>
+            <div class="cliente col-md-4 col-sm-6">
+              <img src="img/image-thum5.jpg" alt="">
+              <span>
+                <h5>Santanderrio.com.ar</h5>
+                <p>Rediseño del sitio público del banco Santander Río, en Argentina. Desde la investigación inicial hasta el desarrollo del front-end y la validación con usuarios.</p>
+                <button data-toggle="modal" data-target="#santander"><a href="#">ver caso</a></button>
+              </span>
+            </div>
+          </li>
           <li>
             <div class="cliente col-md-4 col-sm-6">
               <img src="img/image-thum1.jpg" />
@@ -206,16 +225,6 @@
           </li>
           <li>
             <div class="cliente col-md-4 col-sm-6">
-              <img src="img/image-thum5.jpg" alt="">
-              <span>
-                <h5>Santanderrio.com.ar</h5>
-                <p>Rediseño del sitio público del banco Santander Río, en Argentina. Desde la investigación inicial hasta el desarrollo del front-end y la validación con usuarios.</p>
-                <button data-toggle="modal" data-target="#santander"><a href="#">ver caso</a></button>
-              </span>
-            </div>
-          </li>
-          <li>
-            <div class="cliente col-md-4 col-sm-6">
               <img src="img/image-thum3.jpg" alt="">
               <span>
                 <h5>Lexdir.com</h5>
@@ -229,9 +238,9 @@
             <div class="cliente col-md-4 col-sm-6">
               <img src="img/image-thum6.jpg" alt="">
               <span>
-                <h5>venyviaja.com</h5>
-                <p>Rediseño de la sección nieve de una tienda online de España especializada en paquetes de viaje turísticos</p>
-                <button data-toggle="modal" data-target="#venyviaja"><a href="#">ver caso</a></button>
+                <h5>Tienda Online Proximo Games</h5>
+                <p>Pruebas de usabilidad e informe con sugerencias de mejoras de rápida implementación para optimizar pantallas claves del sitio. </p>
+                <!--<button data-toggle="modal" data-target="#venyviaja"><a href="#">ver caso</a></button>-->
               </span>
             </div>
           </li>
@@ -240,8 +249,8 @@
               <img src="img/image-thum7.jpg" alt="">
               <span>
                 <h5>Clínica Alemana Móvil</h5>
-                <p>Arquitectura de Información y diseño de interfaz para sitio móvil de la Clínica alemana y del sistema de petición m de horas de la clínica</p>
-                <button data-toggle="modal" data-target="#alemana"><a href="#">ver caso</a></button>
+                <p>Arquitectura de Información y diseño de interfaz para pedir horas con médicos desde el móvil.</p>
+                <!--<button data-toggle="modal" data-target="#alemana"><a href="#">ver caso</a></button>-->
               </span>
             </div>
           </li>
@@ -263,18 +272,21 @@
       <div class="row">
         <div class="formulario col-md-8">
           <p>Llena el formulario a continuación o envíanos un correo a hola@elbuencamino.com</p>
-          <form>
+
+          <form method="POST" action="contact-form-submission.php" role="form">
             <div class="col-md-6">
-              <input type="text" placeholder="¿Tu nombre?">
+
+              <input type="text" name="contact_name" id="input1" placeholder="¿Tu nombre?">
             </div>
             <div class="col-md-6">
-              <input type="text" placeholder="Correo electrónico">
+              <input type="text" name="contact_email" id="input2" placeholder="Correo electrónico">
             </div>
             <div class="col-md-12">
-              <textarea>¿Qué podemos hacer por ti?</textarea>
+              <textarea name="contact_message" id="input3" placeholder="¿Qué podemos hacer por ti?"></textarea>
             </div>
             <div class="col-md-12">
-              <button><a href="#section4">¡Conversemos!</a></button>
+              <input type="hidden" name="save" value="contact">  
+              <button type="submit" >Dinos cosas.</button>
             </div>
           </form>
         </div>
@@ -300,7 +312,7 @@
           <ul>
             <li><a href="http://www.facebook.com/siguiendoelbuencamino"><i class="flaticon-facebook"></i></a></li>
             <li><a href="http://www.behance.net/ElBuenCamino"><i class="flaticon-behance"></i></a></li>
-            <li><a href="http://github.com/claudiomerino"><i class="flaticon-github"></i></a></li>
+            <!--<li><a href="http://github.com/claudiomerino"><i class="flaticon-github"></i></a></li>-->
             <li><a href="http://www.twitter.com/el_buen_camino"><i class="flaticon-twitter"></i></a></li>
             <li><a href="callto://elbuencamino.com"><i class="flaticon-skype"></i></a></li>
           </ul>
@@ -516,5 +528,15 @@ $('#nav .navbar-nav li>a').click(function(){
 });
 
   </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44982249-1', 'elbuencamino.com');
+  ga('send', 'pageview');
+
+</script>
   </body>
 </html>
